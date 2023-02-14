@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: pink;
+    text-align:center
+}
+
+h1 {
+   color: bluel;
+   text-align: left; 
+}
+
+.text-red {
+    color: red;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bg-ba {
+    background-color: rgb(254, 234, 204);
+}
+
+#line13 {
+    color:lime;
+    text-decoration: line-through;
+}
+
+div.parent > p {
+    color: black;
+}
+
+.cat_pics {
+    width: 20%;
+    /* height: 100px; */
+}
+
+.cat_input{
+    background-image: url(cat_img.jpg);
+    background-position: bottom 5px right 10px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
