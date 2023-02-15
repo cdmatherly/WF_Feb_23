@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_content {
+    display: flex;
+    height: 800px;
+    /* flex-direction: column; */
+}
+
+.box {
+    background-color: blue;
+    margin: 5px;
+}
+
+.col1{
+    flex: 1; /* 1 + 4 = 5, 1/5*/
+}
+
+.col2{
+    flex: 4; /* 1 + 4 = 5, =4/5*/
+}
+
+
