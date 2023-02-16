@@ -37,6 +37,10 @@ const expected5 = null;
  */
 function nthLast(items, nthToLast) {
   // code here
+  // determine which index to check
+  // determine if that index is within range
+        // if out of range, return null
+        // else, return the value at the index from the arr
 }
 
 // Tests
