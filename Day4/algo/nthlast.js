@@ -36,11 +36,11 @@ const expected5 = null;
  * @returns {any} The item at the nthToLast index or null.
  */
 function nthLast(items, nthToLast) {
-  // code here
-  // determine which index to check
-  // determine if that index is within range
-        // if out of range, return null
-        // else, return the value at the index from the arr
+    var idx = items.length - nthToLast
+    if (idx >= 0 && idx < items.length){ // if the idx is within the bounds of the array
+        return items[idx] //returning the value at that index
+    }
+    return null //else return null
 }
 
 // Tests
@@ -58,3 +58,15 @@ console.log(result4, "should be", expected4);
 
 const result5 = nthLast(arr5, idx5);
 console.log(result5, "should be", expected5);
+
+function nthLast2(items, nthToLast) {
+    if (items.length - nthToLast < items.length &&items.length - nthToLast>=0 ) {
+        return items[items.length - nthToLast];
+            }
+    return null;
+
+    // determine which index to check
+    // determine if that index is within range
+    // if out of range, return null
+    // else, return the value at the index from the arr
+}
