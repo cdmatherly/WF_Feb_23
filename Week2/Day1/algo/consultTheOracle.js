@@ -9,6 +9,7 @@ console.log(random);
 function d6() { //roll a six sided die
     var roll = Math.random();
     // your code here
+    roll = Math.floor(roll*6) + 1
     return roll;
 }
     
@@ -42,3 +43,17 @@ var lifesAnswers = [
     "Outlook not so good.",
     "Very doubtful."
 ];
+
+function consult(){
+    var response = lifesAnswers[Math.floor(Math.random()*lifesAnswers.length)]
+    console.log(response)
+    return response;
+}
+
+consult();
+
+function oracle(question){
+    var answer = lifesAnswers[Math.floor(Math.random() * lifesAnswers.length)];
+    console.log("The Oracle has heard your question: " + question)
+    return answer;
+}
