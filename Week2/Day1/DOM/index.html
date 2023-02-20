@@ -10,8 +10,12 @@
 <body>
     <div class="row">
         <h1>The Best Page Ever</h1>
-        <button type="button" class="button">Click Me</button>
-        <select name="mode" id="mode">
+        <button type="button" class="button" onclick="changeText(this)">
+            Click Me</button>
+        <p id="loggedUser">Logged in user: Spencer</p>
+
+        <button type="button" id="signOut" class="button" onclick="signUserOut(this)">Sign Out</button>
+        <select name="mode" id="mode" onchange="modeSelect(this)">
             <option value="light">Light</option>
             <option value="dark">Dark</option>
         </select>
@@ -19,9 +23,10 @@
     </div>
     <img src="http://placekitten.com/400" alt="a big cat">
     <div class="row">
-        <img src="http://placekitten.com/200/100" alt="a kat">
+        <img src="http://placekitten.com/200/100" alt="a kat" onmouseover="over(this)" onmouseout="out(this)">
         <img src="http://placekitten.com/200/100" alt="a kat">
         <img src="http://placekitten.com/200/100" alt="a kat">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

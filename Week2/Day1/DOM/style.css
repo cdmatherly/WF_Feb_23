@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+img{
+    border: 2px solid black;
+}
+
 .button{
     border: none;
     border-radius: 4px;
@@ -17,5 +21,10 @@
     color: white;
     padding: 8px 10px;
     /* cursor:pointer; */
+}
+
+.dark {
+    background-color: black;
+    color:aqua;
 }
 
