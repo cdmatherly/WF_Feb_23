@@ -6,12 +6,13 @@ console.log(floor);
 console.log(ceiling);
 console.log(random);
 
+var max = 6
+var min = 1
+
 function d6() { //roll a six sided die
     var roll = Math.random();
-    // your code here
-    return roll;
+    return Math.round(Math.random() * (max-min) + min);
 }
-    
 var playerRoll = d6();
 console.log("The player rolled: " + playerRoll);
 
@@ -42,3 +43,9 @@ var lifesAnswers = [
     "Outlook not so good.",
     "Very doubtful."
 ];
+function oracle(question){
+    var answer = lifesAnswers[Math.floor(Math.random() * lifesAnswers.length)];
+    console.log("The Oracle has heard your question: " + question)
+    return answer;
+}
+console.log(oracle("Will I win the lottery?"))
