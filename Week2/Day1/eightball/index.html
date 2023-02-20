@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EightBall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Now answering: <span id="nowAnswering"></span></p>
+    <div id="ball">
+        <div id="viewPort">
+            <p id="responseField"></p>
+        </div>
+    </div>
+    <label for="questionInput">Ask A Question!</label>
+    <input type="text" id="questionInput">
+    <button type="button" id="askButton" onclick="consultEightBall()">Ask</button>
+    <script src="script.js"></script>
+</body>
+</html>

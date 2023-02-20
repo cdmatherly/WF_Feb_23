@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#ball {
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewPort {
+    background-color: rgb(30, 29, 69);
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+#responseField{
+    color: aqua;
+}
+
+#askButton {
+    background-color: red;
+    color: white;
+    box-shadow: 6px 6px 6px pink;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#askButton:active {
+    box-shadow: 3px 3px 3px pink;
+    transform: translate(2px,2px)
+}
+
+.elementToShake {
+    animation: shake 3s linear;
+}
+
+@keyframes shake {
+    0% {
+
+    }
+    20% {
+        transform: translateY(30px)
+    }
+    
+    40% {
+        transform: translateY(-30px)
+    }
+    
+    60% {
+        transform: translateY(30px)
+    }
+
+    80%{
+        transform: translateY(-30px)
+    }
+
+    100%{
+        
+    }
+}
