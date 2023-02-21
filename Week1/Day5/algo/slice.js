@@ -46,21 +46,19 @@ const expected6 = [];
  * @returns {Array<any>} The slice of the given arr from startIdx inclusive
  *    to endIdx.
  */
-function slice(items, startIdx, endIdx) {
-    if (startIdx < 0) {
-        startIdx = 0;
-    }
 
-    if (endIdx > items.length) {
-        endIdx = items.length
-    }
-
-    var newArr = []
-    for (var i = startIdx; i < endIdx; i++) {
-        newArr.push(items[i])
-    }
-
-    return newArr
+function slice(items, startIdx, endIdx){
+  var newArr = [];
+  if (startIdx < 0) {
+    startIdx=0;
+  }
+  if (endIdx > items.length){
+    endIdx=items.length;
+  }
+  for (var i = startIdx; i < endIdx; i++) {
+    newArr.push(items[i])
+  }
+  return newArr;
 }
 
 // Tests
