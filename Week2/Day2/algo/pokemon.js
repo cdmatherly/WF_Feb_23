@@ -54,3 +54,4 @@ console.log("\n pokemon names with only one type, poison:")
 console.log("\n First type of all pokemon whose second type is flying")
 //Your code here
 
+//Bonus Challenge: console.log the reverse of the names of the pokémon whose only type is "poison"
