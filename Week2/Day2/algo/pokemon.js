@@ -24,7 +24,9 @@ var pokemon = [
     { "id": 148, "name": "Dragonair", "types": ["dragon"] }
 ];
 
-// If we wanted to console.log the names of the pokémon who have an id greater than 99 we could...
+console.log(pokemon[0].types[1])
+
+// If we wanted to console.log the names of the pokemon who have an id greater than 99 we could...
 console.log("\n Pokemon with an id greater than 99")
 for (var i = 0; i < pokemon.length; i++) {
     if (pokemon[i].id > 99) {
@@ -32,26 +34,38 @@ for (var i = 0; i < pokemon.length; i++) {
     }
 }
 
-// console.log the pokémon objects whose id is evenly divisible by 3
+// console.log the pokemon objects whose id is evenly divisible by 3 <-- modulo returns!
 console.log("\n pokemon objects with an id divisible by 3:")
 //Your code here
 
 
 
-// console.log the pokémon objects that have more than one type
+// console.log the pokemon objects that have more than one type
 console.log("\n pokemon objects with more than one type")
 //Your code here
 
 
 
-// console.log the **names** of the pokémon whose only type is "poison"
+// console.log the **names** of the pokemon whose only type is "poison"
 console.log("\n pokemon names with only one type, poison:")
 //Your code here
 
 
 
-// console.log the **first type** of all the pokémon whose second type is "flying"
+// console.log the **first type** of all the pokemon whose second type is "flying"
 console.log("\n First type of all pokemon whose second type is flying")
 //Your code here
 
-//Bonus Challenge: console.log the reverse of the names of the pokémon whose only type is "poison"
+//Bonus Challenge: console.log the reverse of the names of the pokemon whose only type is "poison"
+
+var mystring = "popsicle"
+
+var reversed = ""
+// for (var i = 0; i < mystring.length; i++){
+//     reversed = mystring[i] + reversed;
+// }
+for (var i = mystring.length-1; i >=0; i--){
+    reversed += mystring[i]
+}
+
+console.log(reversed)
