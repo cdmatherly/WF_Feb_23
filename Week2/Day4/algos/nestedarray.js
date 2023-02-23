@@ -21,12 +21,22 @@ Hint - Can we put a for loop inside another for loop?
 */
 
 function isPresent2d(arr2d, value){
-    //your code here
+    // var present = false
+    for (var i = 0; i < arr2d.length; i++) {
+        for (var j = 0; j < arr2d[i].length; j++) {
+            if (arr2d[i][j] === value) {
+                return true;
+                // break;
+            }
+        }
+    }
+    return false
 }
 
 // test code
 console.log(isPresent2d([[1],[2,4],[5,6]], 7)) // false
 console.log(isPresent2d([[1,2,5],[2,4,8],[5,6,9]], 6)) // true
+console.log(isPresent2d([[0],[1,3,7],[2,2,2,7],[4,4,6,8,5]],5))
 
 
 /* Challenge 2: flatten 
@@ -39,6 +49,11 @@ Don't use built-in methods like Array.prototype.flat() but feel free to use .pus
 function flatten(arr2d) {
     var flat = [];
     //your code here
+    for (var i = 0; i < arr2d.length; i++) {
+        for (var j = 0; j <arr2d[i].length; j++) {
+            flat.push(arr2d[i][j])
+        }
+    }
     return flat;
 }
 
